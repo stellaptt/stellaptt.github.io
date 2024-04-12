@@ -3,12 +3,11 @@ body {
   color: #9a5311;
   font-family: "Louis George Cafe";
   src: url("JLouis George Cafe.ttf");
-}
-body {
-  margin-bottom: 0;
+  width: 1000px;
+  margin: 0 auto;
 }
 .dropcap {
-  font-size: 2em;
+  font-size: 2.2em;
   line-height: 0.8;
   float: left;
   margin: 5px 5px 5px 0;
