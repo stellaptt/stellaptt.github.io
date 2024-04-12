@@ -1,0 +1,55 @@
+body {
+  background-color: #e8e5e5;
+  color: #9a5311;
+  font-family: "Louis George Cafe";
+  src: url("JLouis George Cafe.ttf");
+}
+body {
+  margin-bottom: 0;
+}
+.dropcap {
+  font-size: 3.5em;
+  line-height: 0.8;
+  float: left;
+  margin: 5px 5px 5px 0;
+  font-family: "against";
+  src: url("against regular.ttf");
+}
+.container {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.column1,
+.column2 {
+  flex: 1;
+  text-align: left;
+}
+
+ul li {
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  text-align: center;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+@font-face {
+  font-family: "against";
+  src: url("against regular.ttf");
+}
+
+@font-face {
+  font-family: "JaneAusten";
+  src: url("JaneAust.ttf");
+}
+footer h1 {
+  font-family: "JaneAusten";
+}
+footer {
+  text-align: center;
+}
