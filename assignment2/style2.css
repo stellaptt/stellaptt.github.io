@@ -1,8 +1,8 @@
 :root {
   --primary-bg-color: #000000;
-  --text-color: #F9DEE5;
+  --text-color: #f9dee5;
   --secondary-text-color: #000000;
-  --tertiary-color: #DF504A;
+  --tertiary-color: #df504a;
 }
 
 html {
@@ -20,9 +20,9 @@ ul {
 /* Code snippet to use */
 
 /* How to center anything in an HTML element
-- Set the HTML Element as display: flex
-- Set justify-content and align-items to center
-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+Set the HTML Element as display: flex
+Set justify-content and align-items to center
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 */
 .center-div {
   display: flex;
