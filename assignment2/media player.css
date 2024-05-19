@@ -1,0 +1,90 @@
+/* Influenced by the media player's design, I added a dynamic playlist feature. 
+This way, users can collect and find their favorite songs easily. 
+I maintained the simple style of the media player for the playlist, with the same volume chart control. 
+I also improved the feedback system. Along with a color-changing heart icon when songs are added to the playlist. 
+If a user tries to add a song that's already in their collection, the heart will change color. */
+
+.image-container {
+  flex-grow: 1.5;
+  max-width: 25%;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.outer-player-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+  height: 354px;
+}
+
+.inner-player-container {
+  height: 75%;
+  flex-grow: 3;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+}
+
+.grid-item {
+  text-align: left;
+  height: 100%;
+}
+
+.upper-row {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  background-color: #f9dee5;
+  height: 100%;
+}
+
+.artist-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 20px;
+  color: var(--secondary-text-color);
+}
+
+.like-and-volume {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 20px;
+  align-items: flex-end;
+}
+
+.volume-button {
+  flex-grow: 1;
+  column-gap: 10px;
+}
+
+.play-utils {
+  background-color: #df504a;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.play-utils .spacer {
+  flex-grow: 6;
+}
+
+.play-utils div {
+  flex-grow: 1;
+}
+
+.play-utils img {
+  flex-grow: 1;
+  width: 40px;
+  height: 33px;
+}
+
+.play-utils a {
+  flex-grow: 1;
+  text-align: center;
+}

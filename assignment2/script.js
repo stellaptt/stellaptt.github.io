@@ -3,19 +3,18 @@ const playPauseBtn = document.querySelector("#play-pause-btn");
 const playPauseImg = document.querySelector("#play-pause-img");
 const progressBar = document.querySelector("#progress-bar-fill");
 video.removeAttribute("controls");
-// playPauseBtn.addEventListener("click", togglePlayPause);
-video.addEventListener("timeupdate", updateProgressBar);
 function togglePlayPause() {
   if (video.paused || video.ended) {
     video.play();
-    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
+    playPauseImg.src = "icon/play.svg";
   } else {
     video.pause();
-    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/play--v1.png";
+    playPauseImg.src = "icon/pause.svg";
   }
 }
-function updateProgressBar() {
-  const value = (video.currentTime / video.duration) * 100;
-  progressBar.style.width = value + "%";
-}
-// Add other functionalities here
+
+// const toggledLikeButton = document.querySelector("#like-button");
+
+// function toggleLike() {
+//   toggledLikeButton.display = "block";
+// }

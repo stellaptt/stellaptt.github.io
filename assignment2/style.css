@@ -1,9 +1,12 @@
 :root {
-  --primary-bg-color: #f4f4f4;
-  --text-color: #333;
-  --main-bg-color: #333;
-  --main-text-color: #fff;
-  --main-btn-bg-color: #938989;
+  --primary-bg-color: #000000;
+  --text-color: #F9DEE5;
+  --secondary-text-color: #000000;
+  --tertiary-color: #DF504A;
+}
+
+html {
+  font-size: 10px;
 }
 
 body,
@@ -14,15 +17,28 @@ ul {
   padding: 0;
 }
 
+/* Code snippet to use */
+
+/* How to center anything in an HTML element
+- Set the HTML Element as display: flex
+- Set justify-content and align-items to center
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+.center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto";
+  font-size: normal;
   background-color: var(--primary-bg-color);
   color: var(--text-color);
-  line-height: 1.6;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  width: 1300px;
+  margin: 0 auto;
 }
 
 /* Add additional styles as needed */
@@ -32,36 +48,6 @@ body {
   max-width: 1000px;
   width: 100%;
   padding: 10px;
-}
-
-/* Header styling */
-header {
-  background-color: var(--main-bg-color);
-  color: var(--main-text-color);
-  padding: 10px 0;
-  text-align: center;
-  width: 100%;
-}
-
-/* Navigation styling */
-nav {
-  margin-top: 20px;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li {
-  margin-right: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--text-color);
 }
 
 /* Media player styling */
@@ -112,9 +98,10 @@ nav a {
 
 /* Footer styling */
 footer {
-  background-color: var(--main-bg-color);
-  color: var(--main-text-color);
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
   text-align: center;
+  margin-top: 5vh;
   padding: 10px 0;
   width: 100%;
 }

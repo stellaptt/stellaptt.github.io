@@ -1,0 +1,15 @@
+/* I added an "Artist Info" section, allowing users to learn more about the artists they listen to. 
+This feature, with a clean and intuitive design, displays artist information, debut time, and location,
+thereby enhancing user engagement. A visual indicator lights up when the feature is active, 
+providing interaction and improving the user experience.*/
+
+.band-header {
+  margin-top: 5vh;
+  width: 100%;
+  background-color: var(--tertiary-color);
+}
+
+.band-text {
+  display: grid;
+  grid-template-columns: 35% 65%;
+}

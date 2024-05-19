@@ -1,73 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- add the font family of your choice -->
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <!-- Header Section -->
-    <header>
-      <h1>Media Player Website</h1>
-    </header>
 
-    <!-- Navigation Section -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- add the font family of your choice -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="font.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="play-section.css" />
+  <link rel="stylesheet" href="lyrics-and-songs.css" />
+  <link rel="stylesheet" href="band-info.css" />
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="logo">MusAlb</h1>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Videos</a></li>
-        <li><a href="#">Music</a></li>
-        <li><a href="#">Playlists</a></li>
+        <li class="center-div"><a href="#">Home</a></li>
+        <li class="center-div"><a href="#">Search</a></li>
+        <li class="center-div selected"><a href="#">Library</a></li>
+        <li class="center-div"><a href="#">Explore</a></li>
         <!-- Add or remove navigation items as needed -->
       </ul>
     </nav>
-
-    <!-- Main Content Section -->
-    <main class="container">
-      <!-- Media Player Section -->
-      <div class="media-player">
-        <video id="custom-video-player" controls>
-          <source
-            src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
-            type="video/mp4"
-          />
-        </video>
-        <div class="custom-controls">
-          <button id="play-pause-btn" onclick="togglePlayPause()">
-            <img
-              id="play-pause-img"
-              src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
-              alt="Play Button"
-              width="24"
-              height="24"
-            />
-          </button>
-          <!-- add the missing buttons or functionality here -->
-          <div class="progress-bar">
-            <span id="progress-bar-fill"></span>
+    <div class="login-button center-div">
+      <a href="#">Login</a>
+    </div>
+  </header>
+  <main class="outer-player-container">
+    <div class="image-container">
+      <img class="" src="image/sheesh.jpg" alt="Sheesh" />
+    </div>
+    <div class="inner-player-container">
+      <video id="custom-video-player" controls style="display: none;">
+        <source src="song.mp4" type="video/mp4" />
+      </video>
+      <div class="grid-item upper-row">
+        <div class="artist-info">
+          <b style="font-size: 40px; flex-grow:2; align-content: center;">Sheesh</b>
+          <p style="font-size: 24px; flex-grow:1; align-content: center;">BABYMONSTER</p>
+          <p style="font-size: 15px; flex-grow:2; align-content: start;">KPOP, YG ENTERTAINMENT</p>
+        </div>
+        <div class="like-and-volume">
+          <a href="#" style="font-size: 40px; flex-grow:2; align-content: center;">
+            <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="54" height="54" fill="var(--text-color)" />
+              <path
+                d="M27 5.0625C14.9038 5.0625 5.0625 14.9038 5.0625 27C5.0625 39.0962 14.9038 48.9375 27 48.9375C39.0962 48.9375 48.9375 39.0962 48.9375 27C48.9375 14.9038 39.0962 5.0625 27 5.0625ZM34.8775 31.7271C33.8882 32.9337 32.0931 34.8627 27.9482 37.6766C27.6686 37.868 27.3377 37.9704 26.9989 37.9704C26.6602 37.9704 26.3293 37.868 26.0497 37.6766C21.9048 34.8627 20.1097 32.9305 19.1204 31.7271C17.0111 29.1568 16.0007 26.517 16.0302 23.6588C16.0629 20.3829 18.6901 17.7177 21.8869 17.7177C24.0384 17.7177 25.5783 18.8388 26.538 19.8703C26.5972 19.9329 26.6685 19.9827 26.7475 20.0168C26.8266 20.0508 26.9118 20.0684 26.9979 20.0684C27.084 20.0684 27.1692 20.0508 27.2482 20.0168C27.3273 19.9827 27.3986 19.9329 27.4577 19.8703C28.4186 18.8388 29.9573 17.7177 32.1089 17.7177C35.3057 17.7177 37.9329 20.3829 37.9656 23.6588C37.9972 26.517 36.9858 29.1568 34.8775 31.7271Z"
+                fill="var(--tertiary-color)" />
+            </svg>
+          </a>
+          <div class="volume-button center-div">
+            <a href="#">
+              <svg width="31" height="28" viewBox="0 0 31 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M25.1429 7.94994C26.3405 8.65437 27.3125 9.56781 27.982 10.6179C28.6515 11.668 29 12.8259 29 14C29 15.1741 28.6515 16.332 27.982 17.3821C27.3125 18.4322 26.3405 19.3456 25.1429 20.0501M7.78571 18.5375H3.92857C3.41708 18.5375 2.92654 18.3782 2.56487 18.0945C2.20319 17.8109 2 17.4262 2 17.025V10.975C2 10.5738 2.20319 10.1891 2.56487 9.90546C2.92654 9.62181 3.41708 9.46246 3.92857 9.46246H7.78571L14.5357 2.65614C14.7043 2.39937 14.9844 2.19834 15.3254 2.08939C15.6665 1.98045 16.046 1.97076 16.3953 2.06209C16.7447 2.15342 17.0409 2.33974 17.2304 2.58739C17.4199 2.83503 17.4902 3.12766 17.4286 3.4124V24.5876C17.4902 24.8723 17.4199 25.165 17.2304 25.4126C17.0409 25.6603 16.7447 25.8466 16.3953 25.9379C16.046 26.0292 15.6665 26.0196 15.3254 25.9106C14.9844 25.8017 14.7043 25.6006 14.5357 25.3439L7.78571 18.5375Z"
+                  stroke="var(--tertiary-color)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg width="125" height="6" viewBox="0 0 125 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="125" height="6" rx="3" fill="var(--tertiary-color)" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
+      <div class="grid-item play-utils">
+        <div class="spacer"></div>
+        <img src="icon/shuffle.svg" alt="Shuffle Icon">
+        <img src="icon/backward.svg" alt="Go back Icon">
+        <a href="#" style="text-decoration: none;" onclick="togglePlayPause()">
+          <img id="play-pause-img" src="icon/play.svg" alt="Play Icon">
+        </a>
+        <img src="icon/forward.svg" alt="Go next Icon">
+        <img src="icon/repeat.svg" alt="Repeat Icon">
+        <div class="spacer"></div>
+      </div>
+    </div>
+  </main>
+  <section>
+    <div class="lyrics-and-songs">
+      <div class="lyrics">
+        <pre style="color:var(--text-color); font-family: 'Roboto'; font-size: 24px;">
+          <b style="font-size: 40px;">Lyrics of SHEESH</b></br>
+          Da-la-da-da
+          Da-la-da-da
+          Da-la-da-da
+          Baby I'm a monster
+          Mano a mano
+          I see you in slow-mo
+          You know you're in trouble
+          Ooh-hoo-hoo-hoo
+          Balbeodung chyeobwa
+          Eochapi sonbadak
+          Wieseo mot naga
+          You know that
+          Nuneul tteun sungan
+          Pieona
+          All eyes on me
+          Bureul jilleora
+          Do or die
+          On my life
+          Yeah you ain't seen nothing yet
+          Got them all going
+          Sheesh sheesh
+          Sheesh sheesh sheesh yeah
+          B-a-b-y-m-o-n
+          Sheesh sheesh
+          Sheesh sheesh sheesh yeah
+          Got them all going
+          Yo hold on shwit
+          Gyang deuribueora ne dalpaengigwane
+          Igeon ne gwie jul chukbok
+          Eumage matchwo gyang chum chwo
+          Hibiri hop-hop boom boom pow
+          Bunwigi taolla neonedeul nun dora
+          Ttinghani jeokjani chunggyeogil geoya
+          Crown this queen
+          Homneoneun chyeotgo nae daеumeun wi
+          Eojungitteojungi junggan anim
+          Nal bogo datyeotdеon ipdeul say
+          Sheesh sheesh sheesh
+          You know what it is
+          I'll be running this
+          Pull up in a ghost
+          Peek a peek a boo hoo
+          Vroom vroom
+          Neone simjange bakdongi pump pump pop
+          Pedal to the metal
+          Click clack click
+          Put 'em up to the sky
+          High high high high
+          Nuneul tteun sungan</pre>
+      </div>
+      <div class="album-songs">
+        <p class="header">More In</p>
+        <p class="header">BABYMONSTER Album</p>
+        <div class="song">
+          <div class="song-image-cover" style="background-image: url('image/BATTER\ UP.jpg');">
+          </div>
+          <div class="song-info">
+            <h2>BATTER UP</h2>
+            <p>BABYMONSTER</p>
+          </div>
+        </div>
+        <div class="song">
+          <div class="song-image-cover" style="background-image: url('image/LIKE\ THAT.jpeg');">
+          </div>
+          <div class="song-info">
+            <h2>LIKE THAT</h2>
+            <p>BABYMONSTER</p>
+          </div>
+        </div>
+        <div class="song">
+          <div class="song-image-cover" style="background-image: url('image/STUCK\ IN\ THE\ MIDDLE.png');">
+          </div>
+          <div class="song-info">
+            <h2>STUCK IN THE MIDDLE</h2>
+            <p>BABYMONSTER</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="band-header center-div">
+      <b style="font-size: 40px;color: #EFA7A4; padding: 15px 0;">ABOUT THE ARTIST</b>
+    </div>
+    <div class="band-text">
+      <img src="image/band-image.png" alt="Image of the band">
+      <p style="font-size: 24px;color: #ffffff; margin-top: 40px; ">
+        <b style="color: var(--tertiary-color)">BABYMONSTER</b> is YG Entertainment’s girl group comprised of multinational members from Korea, Thailand, and Japan. As an ‘all-rounder‘ group with unrivaled talent in vocals, dance, rap and visuals, they're making a real name for themselves worldwide.
+        <br>
+        <br>
+        <br>
+        In April 2024, <b style="color: var(--tertiary-color)">BABYMONSTER</b> released their 1st MINI ALBUM [BABYMONS7ER] embodying the synergy of a complete 7-member lineup, captivating global music fans with their music that transcends genres. Anticipation is in the air as fans worldwide are eagerly engaged to see what BABYMONSTER brings next on the global stage.</p>
+  </section>
+  <footer style="font-size: 24px">
+    <p >&copy; 2024 Media Player Website. All rights reserved.</p>
+    All icons provided by <a href="https://fontawesome.com/">Font Awesome</a>
+  </footer>
+</body>
 
-      <!-- Additional Content Section -->
-      <section>
-        <h2>Additional Content</h2>
-        <p>This is where you can showcase any other relevant content.</p>
-        <!-- Add more content as needed -->
-      </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer>
-      <p>&copy; 2024 Media Player Website. All rights reserved.</p>
-      <a href="https://icons8.com/icon/59862/play">Play</a> icon by
-      <a href="https://icons8.com">Icons8</a>
-      <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
-      <a href="https://icons8.com">Icons8</a>
-    </footer>
-  </body>
 </html>
