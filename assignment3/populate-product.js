@@ -1,10 +1,10 @@
 var productData = [
-  ["images/IMG_0284.JPG", "images/IMG_0285.JPG", "COLETTE TOP - IVORY", "189$"],
-  ["images/IMG_0286.JPG", "images/IMG_0287.JPG", "COLETTE TOP - IVORY", "189$"],
-  ["images/IMG_0288.JPG", "images/IMG_0289.JPG", "COLETTE TOP - IVORY", "189$"],
-  ["images/IMG_0290.JPG", "images/IMG_0291.JPG", "COLETTE TOP - IVORY", "189$"],
-  ["images/IMG_0292.JPG", "images/IMG_0293.JPG", "COLETTE TOP - IVORY", "189$"],
-  ["images/IMG_0294.JPG", "images/IMG_0295.JPG", "COLETTE TOP - IVORY", "189$"],
+  ["images/IMG_0284.JPG", "images/IMG_0285.JPG", "STELLA DRESS", "189$"],
+  ["images/IMG_0286.JPG", "images/IMG_0287.JPG", "BAELA DRESS", "189$"],
+  ["images/IMG_0288.JPG", "images/IMG_0289.JPG", "ROSALYN DRESS", "189$"],
+  ["images/IMG_0290.JPG", "images/IMG_0291.JPG", "SAMIRA DRESS", "189$"],
+  ["images/IMG_0292.JPG", "images/IMG_0293.JPG", "JOSETTE DRESS", "189$"],
+  ["images/IMG_0294.JPG", "images/IMG_0295.JPG", "TILLY DRESS", "189$"],
 ];
 
 function createProductImage(image) {
@@ -58,8 +58,7 @@ function addAllProducts() {
     size.forEach(function (text) {
       var sizeButton = createSizeButton(text);
       productSize.appendChild(sizeButton);
-    }
-    );
+    });
     productDiv.appendChild(productSize);
 
     productList.appendChild(productDiv);
