@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products.css">
+    <style>
+        .song.song-image-cover:hover {
+            background-image: url('images/IMG_0285.JPG') !important;
+        }
+    </style>
+    <script src="populate-product.js"></script>
+    <script src="toggle-panel.js"></script>
+    <script src="drag-and-drop.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="wishlist-panel" class="side-panel collapsed" ondragover="handleDragOver(event)" ondrop="handleDrop(event)">
+    </div>
+    <div id="main-content">
+        <div id="header-container">
+            <button id="wishlist-button" class="round-button" onclick="togglePanelWishList()"><i class="fa fa-heart-o"></i></button>
+            <div class="pacer"></div>
+            <img src="images/Logo.PNG"alt="Logo">
+            <div class="pacer"></div>
+            <button id="cart-button" class="round-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+        </div>
+        <section>
+            <div id="product-lists">
+            </div>
+        </section>
+    </div>
+    </div>
+
+</body>
+
+</html>
