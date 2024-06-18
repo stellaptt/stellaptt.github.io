@@ -1,63 +1,65 @@
-var wishlistElement = []
-var cartElement = []
+// I've added a "drag and drop" feature. Users can drag a picture of an item they like into a wishlist.
+//This helps users compare items they're interested in with other pictures. This feature helps them see what they prefer and make better choices.
+
+var wishlistElement = [];
+var cartElement = [];
 
 function handleDragStart(event) {
-    event.dataTransfer.setData('text/plain', event.target.id);
+  event.dataTransfer.setData("text/plain", event.target.id);
 }
 function handleDragOver(event) {
-    event.preventDefault();
+  event.preventDefault();
 }
 
 function createImage(image) {
-    var imageContainer = document.createElement("div");
-    imageContainer.style.overflow = "hidden";
-    imageContainer.style.objectFit = "fill";
-    imageContainer.style.height = "90%";
-    imageContainer.style.width = "90%";
-    imageContainer.classList.add("center-div");
-    var productImage = document.createElement("img");
-    productImage.setAttribute("src", image[0]);
-    productImage.style.height = "100%";
-    imageContainer.appendChild(productImage);
-    // productImage.className = "product-image";
-    // productImage.style.backgroundImage = "url(" + image[0] + ")";
+  var imageContainer = document.createElement("div");
+  imageContainer.style.overflow = "hidden";
+  imageContainer.style.objectFit = "fill";
+  imageContainer.style.height = "90%";
+  imageContainer.style.width = "90%";
+  imageContainer.classList.add("center-div");
+  var productImage = document.createElement("img");
+  productImage.setAttribute("src", image[0]);
+  productImage.style.height = "100%";
+  imageContainer.appendChild(productImage);
+  // productImage.className = "product-image";
+  // productImage.style.backgroundImage = "url(" + image[0] + ")";
 
-    return imageContainer;
-  }
+  return imageContainer;
+}
 
 function createWishlistProduct(product) {
-    var productDiv = document.createElement("div");
-    productDiv.className = "product";
-    productDiv.style.height = "250px";
-    productDiv.style.flexDirection = "column";
-    productDiv.classList.add("center-div");
+  var productDiv = document.createElement("div");
+  productDiv.className = "product";
+  productDiv.style.height = "250px";
+  productDiv.style.flexDirection = "column";
+  productDiv.classList.add("center-div");
 
+  var productImage = createImage(product);
+  productDiv.appendChild(productImage);
 
-    var productImage = createImage(product);
-    productDiv.appendChild(productImage);
+  var productTitle = document.createElement("h3");
+  productTitle.textContent = product[2];
+  productTitle.classList.add("center-div");
 
-    var productTitle = document.createElement("h3");
-    productTitle.textContent = product[2];
-    productTitle.classList.add("center-div");
+  productDiv.appendChild(productTitle);
 
-    productDiv.appendChild(productTitle);
-
-    return productDiv;
+  return productDiv;
 }
 
 function handleDrop(event) {
-    event.preventDefault();
-    var id = event.dataTransfer.getData('text/plain');
-    // event.target.appendChild(document.getElementById(id));
-    console.log(event.target)
-    let product = productData[id.slice(-1)]
-    if (event.target.id == 'wishlist-panel') {
-        console.log(product)
-        wishlistElement.push(product)
-        let wishListProduct = createWishlistProduct(product)
-        event.target.appendChild(wishListProduct);
-    } else if (event.target.id == 'cart-panel') {
-        console.log(product)
-        cartElement.push(product)
-    }
+  event.preventDefault();
+  var id = event.dataTransfer.getData("text/plain");
+  // event.target.appendChild(document.getElementById(id));
+  console.log(event.target);
+  let product = productData[id.slice(-1)];
+  if (event.target.id == "wishlist-panel") {
+    console.log(product);
+    wishlistElement.push(product);
+    let wishListProduct = createWishlistProduct(product);
+    event.target.appendChild(wishListProduct);
+  } else if (event.target.id == "cart-panel") {
+    console.log(product);
+    cartElement.push(product);
+  }
 }

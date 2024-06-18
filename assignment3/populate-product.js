@@ -1,3 +1,6 @@
+//I made a Javascript script. It gets data from the first product and puts it on the website's home page.
+//The data has the product's picture, name, and price. But, I've hidden the price for now because it took too long to add.
+//The first thing users see is the product's picture, and another picture shows up when they hover over the product. I added all these parts to the 'product list' section in the HTML document.
 var productData = [
   ["images/IMG_0284.JPG", "images/IMG_0285.JPG", "STELLA DRESS", "189$"],
   ["images/IMG_0286.JPG", "images/IMG_0287.JPG", "BAELA DRESS", "189$"],
