@@ -1,5 +1,7 @@
 /* The addition of heart and cart icons and the collapsible panel for detailed product information were decisions made to enhance user interaction and navigation. These features, often found in online shopping platforms, were adapted to our context to provide a familiar yet enhanced user experience. The heart and cart buttons offer a visual representation of user preferences and selections, while the collapsible panel offers detailed product information upon demand, contributing to a cleaner, uncluttered user interface. */
 /*  All these design decisions were deeply influenced by the context of an interactive online fashion shopping experience. I aimed to incorporate elements from physical shopping experiences while leveraging the capabilities of digital platforms to provide an enhanced, user-centric, and engaging shopping scenario. */
+/* Icon by fontawesome: https://www.w3schools.com/howto/howto_css_icon_buttons.asp */
+
 body {
   display: flex;
   margin: 0px;

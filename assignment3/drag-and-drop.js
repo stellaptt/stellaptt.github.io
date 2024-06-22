@@ -1,6 +1,7 @@
 // The context for my design was an interactive fashion shopping experience. I sought to create a user-friendly and engaging platform that modeled the excitement of browsing through a physical store.
 // The "drag and drop" feature was inspired by the tangible experience of picking up items in a physical store and adding them to a shopping basket.
 // I wanted to simulate this experience digitally, allowing users to visualize their selections in a "wishlist." This feature was designed to improve user engagement and decision-making, providing a playful and practical element that fosters comparison and selection of preferred items.
+// Drag and drop: https://www.w3schools.com/html/html5_draganddrop.asp
 
 var wishlistElement = [];
 var cartElement = [];

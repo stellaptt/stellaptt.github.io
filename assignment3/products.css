@@ -1,5 +1,5 @@
 /* The CSS file was created to enhance the aesthetic appeal of the website. Mirroring the vibrant and diverse color schemes seen in fashion retail environments, I used different colors for each section and introduced an interactive element where the image changes upon hovering over an item. This feature adds a layer of discovery and interest, akin to examining a garment from different angles in a physical store. */
-
+/*  using javascript to create element: https://www.w3schools.com/js/js_htmldom_nodes.asp */
 #product-lists {
   display: flex;
   overflow-y: none;

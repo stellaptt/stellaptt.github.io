@@ -1,4 +1,5 @@
 // The Javascript script was a necessary implementation to populate the website with product data, mimicking the varied and dynamic selection in a fashion store. Initially, I included the product's picture, name, and price. However, to focus on the visual appeal and design of the products, I decided to hide the price temporarily, making the first user interaction centered around the product's design.
+// Transition: https://www.w3schools.com/howto/howto_css_transition_hover.asp
 var productData = [
   ["images/IMG_0284.JPG", "images/IMG_0285.JPG", "STELLA DRESS", "189$"],
   ["images/IMG_0286.JPG", "images/IMG_0287.JPG", "BAELA DRESS", "189$"],
