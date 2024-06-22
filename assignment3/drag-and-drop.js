@@ -1,5 +1,6 @@
-// I've added a "drag and drop" feature. Users can drag a picture of an item they like into a wishlist.
-//This helps users compare items they're interested in with other pictures. This feature helps them see what they prefer and make better choices.
+// The context for my design was an interactive fashion shopping experience. I sought to create a user-friendly and engaging platform that modeled the excitement of browsing through a physical store.
+// The "drag and drop" feature was inspired by the tangible experience of picking up items in a physical store and adding them to a shopping basket.
+// I wanted to simulate this experience digitally, allowing users to visualize their selections in a "wishlist." This feature was designed to improve user engagement and decision-making, providing a playful and practical element that fosters comparison and selection of preferred items.
 
 var wishlistElement = [];
 var cartElement = [];

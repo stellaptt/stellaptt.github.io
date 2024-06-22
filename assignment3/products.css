@@ -1,6 +1,4 @@
-/* I've made a CSS file to color the website and make it nice to look at. 
-It uses different colors for each section. It also changes the image when you hover over an item to show a new perspective. 
-I've used JavaScript to let users drag items to a wishlist. This makes shopping more fun and interactive. */
+/* The CSS file was created to enhance the aesthetic appeal of the website. Mirroring the vibrant and diverse color schemes seen in fashion retail environments, I used different colors for each section and introduced an interactive element where the image changes upon hovering over an item. This feature adds a layer of discovery and interest, akin to examining a garment from different angles in a physical store. */
 
 #product-lists {
   display: flex;
